@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--bootstrap--><link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <!--Fonte do Google--><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap"
+          rel="stylesheet">
+    <!--bootstrap--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--bootstrap--><link href="/webjars/bootstrap/4.4.1-1/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--CSS--><link rel="stylesheet" href="../../css/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Academy</title>
+    <meta name="author" content="Carlos Humberto">
+</head>
+
+        <div style="margin: 0; text-align:center;"  class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Seja Bem Vindo: <span th:text="${session.usuarioLogado.user}"></span></strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button><!--  -->
+        </div>
+
+
+<body>
+<div th:insert="fragments/header :: modelheader"></div>
+
+
+<section class="neo-section" style="background-image: url('img/escola2.jpg') ">
+    <div class="sombra"></div>
+    <div class="center neo-container">
+        <h1 class="texto-centro">Sistema de Gerenciamento de Alunos</h1>
+
+
+        <div class="botoes">
+            <div class="wm">
+                <button class="btn btn-danger">CADASTRAR ALUNO</button>
+            </div>
+            <div class="wm">
+                <button class="btn btn-danger">ENCONTRAR ALUNO</button>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+
+</section>
+
+        <script src="/webjars/jquery/3.5.1/jquery.min.js"></script>
+        <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+
+<div th:insert="fragments/footer :: modelfooter"></div>
+</html>

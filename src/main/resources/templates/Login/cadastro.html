@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!--bootstrap--><link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+  <!--Fonte do Google--><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&family=Ubuntu&family=Work+Sans&display=swap"
+        rel="stylesheet">
+  <!--bootstrap--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--bootstrap--><link href="/webjars/bootstrap/4.4.1-1/css/bootstrap.min.css" rel="stylesheet"/>
+  <!--CSS--><link rel="stylesheet" href="../../css/login.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Academy - Login</title>
+  <meta name="author" content="Carlos Humberto">
+</head>
+
+<body>
+
+<div class="Login-Form">
+  <div class="container">
+    <div class="main-div">
+      <div class="texto-header">
+        <h2>Cadastro de Usuário</h2>
+        <p>Crie seu usuário no sistema.</p>
+      </div>
+
+      <form method="post" th:object="${usuarioL}" action="salvarUsuario">
+        <div class="form-group">
+          <input type="email" class="form-control" th:field="*{email}" placeholder="digite seu email">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" th:field="*{user}" placeholder="username">
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control" th:field="*{senha}" placeholder="insira sua senha">
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <button type="button" class="btn btn-info">Voltar</button>
+
+      </form>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
