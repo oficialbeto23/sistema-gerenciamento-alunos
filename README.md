@@ -5,6 +5,8 @@ do Projeto: O projeto tem por finalidade Gerenciar Alunos de uma escola. Onde é
 
 ![lista.png](img_readme%2Flista.png)
 
+Tela Pesquisa:
+
 ![pesquisa.png](img_readme%2Fpesquisa.png)
 
 ## Requisitos do ambiente de Desenvolvimento.
