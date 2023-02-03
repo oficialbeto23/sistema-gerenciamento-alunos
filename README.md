@@ -4,6 +4,8 @@ Descrição do Projeto: O projeto tem por finalidade Gerenciar Alunos de uma esc
 
 ![lista.png](img_readme%2Flista.png)
 
+![filtro.png](img_readme%2Ffiltro.png)
+
 ## Requisitos do ambiente de Desenvolvimento.
 
 Precisa-se do JDK 17
