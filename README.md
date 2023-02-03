@@ -1,10 +1,11 @@
 # Sistema de Cadastro de Alunos
 
-Descrição do Projeto: O projeto tem por finalidade Gerenciar Alunos de uma escola. Onde é possível Cadastrar, Pesquisar e Listar os alunos do Sistema.
+Descrição
+do Projeto: O projeto tem por finalidade Gerenciar Alunos de uma escola. Onde é possível Cadastrar, Pesquisar e Listar os alunos do Sistema.
 
 ![lista.png](img_readme%2Flista.png)
 
-![filtro.png](img_readme%2Ffiltro.png)
+![pesquisa.png](img_readme%2Fpesquisa.png)
 
 ## Requisitos do ambiente de Desenvolvimento.
 
